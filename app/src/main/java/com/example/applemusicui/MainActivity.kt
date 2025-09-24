@@ -100,7 +100,7 @@ class MainActivity : ComponentActivity() {
                                 fontWeight  = FontWeight.Bold
                             )
                             Text(
-                                text = "0:01                                                                           -2:59",
+                                text = "0:01                                                                         -2:59",
                                 modifier = Modifier
                                     .align(Alignment.Center)
                                     .offset(y = (-90).dp),
@@ -145,14 +145,9 @@ class MainActivity : ComponentActivity() {
                                 modifier = Modifier
                                     .align(Alignment.Center)
                                     .offset(y=(-30).dp)
+                                    .width(360.dp)
                             )
-                            Image(
-                                painter = painterResource(id = R.drawable.button_spread),
-                                contentDescription = null,
-                                modifier = Modifier
-                                    .align(Alignment.Center)
-                                    .offset(y=(-30).dp)
-                            )
+
 
                             Image(
                                 painter = painterResource(id = R.drawable.bottom_buttons),
@@ -160,12 +155,13 @@ class MainActivity : ComponentActivity() {
                                 modifier = Modifier
                                     .align(Alignment.BottomCenter)
                                     .offset(y=(-30).dp)
+                                    .width(310.dp)
                             )
                             Text(
-                                text = "         Jack Bellgowan's Audi A4",
+                                text = "                 Jack Bellgowan's Audi A4",
                                 modifier = Modifier
                                     .align(Alignment.BottomStart)
-                                    .offset(y=(-36).dp),
+                                    .offset(y=(-33).dp),
                                 color = Color(0xFF1DB954),
                                 fontSize = 15.sp,
                                 fontWeight  = FontWeight.Bold
